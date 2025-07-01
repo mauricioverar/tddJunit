@@ -37,7 +37,7 @@ public class InvoiceManagerTest {
   @Test
   void deberiaActualizarEstado() {
 
-    String expectedInvoiceNumber = "Technova";
+    String expectedInvoiceNumber = "Technova S.A. Factura 001";
     double expectedAmount = 1500.0;
 
     // Act accion
@@ -46,7 +46,7 @@ public class InvoiceManagerTest {
 
     boolean updated = manager.updateStatus(invoice.getId(), "Pagada");
     // Assert verificacion
-    // Verificar que la factura se haya creado correctamente
+    // Verificar que la factura se haya actualizado correctamente
     assertThat(updated).isTrue();
     assertThat(invoice.getStatus()).isEqualTo("Pagada");
   }
@@ -63,7 +63,7 @@ public class InvoiceManagerTest {
 
     boolean removed = manager.deleteInvoice(invoice.getId());
     // Assert verificacion
-    // Verificar que la factura se haya creado correctamente
+    // Verificar que la factura se haya eliminado correctamente
     assertThat(removed).isTrue();
     assertThat(manager.getAll()).isEmpty();
   }
