@@ -21,7 +21,7 @@ public class InvoiceManagerTest {
   @Test
   void deberiaCrearUnaFactura() {
 
-    String expectedInvoiceNumber = "Technova";
+    String expectedInvoiceNumber = "Technova S.A. Factura 001";
     double expectedAmount = 1500.0;
 
     // Act accion
@@ -54,7 +54,7 @@ public class InvoiceManagerTest {
   @Test
   void deberiaEliminarFactura() {
 
-    String expectedInvoiceNumber = "Technova";
+    String expectedInvoiceNumber = "Technova S.A. Factura 001";
     double expectedAmount = 1500.0;
 
     // Act accion
