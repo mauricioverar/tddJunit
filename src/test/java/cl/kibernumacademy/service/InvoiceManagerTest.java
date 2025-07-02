@@ -11,8 +11,7 @@ public class InvoiceManagerTest {
 
   @BeforeEach
   void setUp() {
-    // preparacion
-    // Arrange
+    
     // Inicializar el manager de facturas
     // Esto se ejecuta antes de cada prueba
     manager = new InvoiceManager();
@@ -21,6 +20,8 @@ public class InvoiceManagerTest {
   @Test
   void deberiaCrearUnaFactura() {
 
+    // preparacion
+    // Arrange
     String expectedInvoiceNumber = "Technova S.A. Factura 001";
     double expectedAmount = 1500.0;
 
@@ -37,6 +38,8 @@ public class InvoiceManagerTest {
   @Test
   void deberiaActualizarEstado() {
 
+    // preparacion
+    // Arrange
     String expectedInvoiceNumber = "Technova S.A. Factura 001";
     double expectedAmount = 1500.0;
 
@@ -54,6 +57,8 @@ public class InvoiceManagerTest {
   @Test
   void deberiaEliminarFactura() {
 
+    // preparacion
+    // Arrange
     String expectedInvoiceNumber = "Technova S.A. Factura 001";
     double expectedAmount = 1500.0;
 
